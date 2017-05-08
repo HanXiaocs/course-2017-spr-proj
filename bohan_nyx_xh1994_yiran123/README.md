@@ -42,7 +42,7 @@ In our project, we mainly use coordinates to locate places and employ geopy/vinc
 | -------------   |:---------------:                 | --------------:|
 | 1               | Active food establishment licence, Crime Boston | Crime number around each food establishment(within 1 mile)|
 | 2               | MBTA Bus Stop, Airbnb Rating(Original), Entertainment License|Entertainment & bustop number around each Airbnb|
-| 3               | Active food establishment licence, Food Establishment Inspection |Cleanliness level of food establishments|
+| 3               | Active food establishment licence, Food Establishment Inspection |Cleanliness level of food establishments(Passrate of inspections)|
 | 4               |Cleanliness level of food establishments, Crime number around each food establishment(within 1 mile),Entertainment & bustop number around each Airbnb|Correlation coefficient|
 | 5               |correlation coefficient|Food establishment score system|
 | 6               |Food establishment score system, Airbnb Rating| Airbnb surrounding food establishment score (Average)|
@@ -67,7 +67,9 @@ The defination of correlation coefficient:
 
 ![equation](http://latex.codecogs.com/gif.latex?corr%28x%2Cy%29%3D%20%5Cfrac%7Bcov%28x%2Cy%29%7D%7Bstd%28x%29%20%5Ccdot%20std%28y%29%7D)
 
-In our project, we calculate correlation coefficients between many factors to see how they are related.
+In our project, we calculate correlation coefficients between many factors to see how they are related. Here is the distribution (Our first visualization) as well as the corresponding analysis.
+
+
 
 
 
