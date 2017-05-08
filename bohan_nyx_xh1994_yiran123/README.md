@@ -1,15 +1,52 @@
-README
 
-Running time: About 30-40 minutes.
-From project1: transformation1-3
-From project2: transformation4(correlation coefficient), transformation5(restaurant scoring system), transformation6(calculating avg restaurant scores around each airbnb), transformation7(airbnb scoring system)
+# Evaluating Airbnb in Boston Area
 
-Questions:
-1. See if the datasets we created in project 1 are related using correlation coefficient.
-2. Build a scoring system. Rank airbnb housings in Boston area, according to a criteria we designed.
+Author: [Bohan Li](https://github.com/bohanli0403), [Ningyi Xue](https://github.com/Ginnyxue), [Han Xiao](https://github.com/HanXiaocs), [Yiran Pan](https://github.com/yiran123)
 
-In project 2 we first made some adjustments to datasets that we generated in project1. We use MBTA bus stops instead of traffic signals to more precisely describe transportations around each airbnb. 
+## Introduction
+As one of the most famous online marketplaces and hospitality service websites, Airbnb becomes more and more popular among travelers all around the world. However, do travelers really know the Airbnb housing they choose to stay? Unlike looking for a traditional hotel on travel agency websites, customers usually need to spend more time on finding a safe and convenient house that matches their expectation because Airbnb let hosts provide all the information, which could lead to the lack of credibility. In our project, we decide to let the data talks. Besides the original Airbnb reviews given by customers, we also evaluate other factors that could affect the qualities of Airbnb housings in Boston Area. The goal of our project is to help potential Airbnb customers to choose the best Airbnb of they needs.
 
-We basically designed a scoring system for Airbnbs in Boston. We evaluate airbnbs in respect of ratings given by customers(obtain by calculating overall scores, cleanliness scores, noisy levels, accuracies), transportation convenience, surrounding entertainment, surrounding restaurant number and quality. We also created a restaurant scoring standard and obtained restaurant number & quality by calculating each restaurant's cleanliness level and safety level. We combined the two scoring system standards into one dataset to evaluate airbnbs.  
+## Tools and Dataset
 
-We normalized each field so that we could get a general evaluation. To determine which field to be used, we also calculated correlation coefficients of MBTA stops number around airbnb && entertainment number around airbnb and cleanness level of restaurants && crime numbers around the restaurants. We checked if the features of airbnb are in positive relation, if they are, they are similar traits to the scoring system of airbnb, so we can eliminate one of them to only have to use one to represent two features.
+### Programming Languages
+1. Python
+2. MongoDB
+3. D3.js
+4. Leaflet js
+
+### Data Sets
+1. City of Boston crime incident July 2012 - August 2015
+   
+   https://data.cityofboston.gov/Public-Safety/Crime-Incident-Reports-July-2012-August-2015-Sourc/7cdf-6fgx
+2. Active Food Establishment Licenses
+   
+   https://data.cityofboston.gov/Permitting/Active-Food-Establishment-Licenses/gb6y-34cq
+3. Food Establishment Inspections
+   
+   https://data.cityofboston.gov/Health/Food-Establishment-Inspections/qndu-wx8w
+4. Entertainment Licenses
+   
+   https://data.cityofboston.gov/Permitting/Entertainment-Licenses/qq8y-k3gp
+5. Airbnb Boston
+   
+   http://insideairbnb.com/get-the-data.html
+   
+6. MBTA Bus Sthttp://insideairbnb.com/get-the-data.htmlops
+   
+   http://datamechanics.io/data/wuhaoyu_yiran123/MBTA_Bus_Stops.geojson
+
+### Data Retrival
+In our project, we mainly use coordinates to locate places and employ geopy/vincenty to calculate the distances between places in different datasets in order to obtain a statistic.
+
+| Transformations | Original Dataset                 | New combination|
+| -------------   |:---------------:                 | --------------:|
+| 1               | Active food establishment licence, Crime Boston | Crime number around each food establishment(within 1 mile)|
+| 2               | MBTA Bus Stop, Airbnb Rating(Original), Entertainment License|Entertainment & bustop number around each Airbnb|
+| 3               | Active food establishment licence, Food Establishment Inspection |Cleanliness level of food establishments|
+| 4               |Cleanliness level of food establishments, Crime number around each food establishment(within 1 mile),Entertainment & bustop number around each Airbnb|Correlation coefficient|
+| 5               |correlation coefficient|Food establishment score system|
+| 6               |Food establishment score system, Airbnb Rating| Airbnb surrounding food establishment score (Average)|
+| 7               |Airbnb Rating, Crime Boston | Crime number around each Airbnb(within 1 mile)|
+| 8               |Airbnb Rating, Entertainment & bustop number around each Airbnb, Airbnb surrounding food establishment score (Average), Crime number around each Airbnb(within 1 mile)|Airbnb Score System|
+| 9               |Airbnb Score System|Score distribution(for visualization)|
+
