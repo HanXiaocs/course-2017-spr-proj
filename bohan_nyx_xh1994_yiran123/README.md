@@ -71,7 +71,21 @@ The defination of correlation coefficient:
 
 ![equation](http://latex.codecogs.com/gif.latex?corr%28x%2Cy%29%3D%20%5Cfrac%7Bcov%28x%2Cy%29%7D%7Bstd%28x%29%20%5Ccdot%20std%28y%29%7D)
 
-In our project, we calculate correlation coefficients between many factors to see how they are related. Here is the distribution (Our first visualization) as well as the corresponding analysis.
+We calculate correlation coefficients between the most concerned factors (original Airbnb ratings, weighted Airbnb scores, safety level, transportation) and generate three plot graphs to show the relationships.
+Here is the distribution (Our first visualization) as well as the corresponding analysis.
+
+### Original Airbnb Ratings(y-axis) vs. Weighted Airbnb Scores(x-axis)
+
+![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/oldnew.png)
+
+### Original and Weighted Airbnb Scores(x-axis)  vs  Safety Level (y-axis) 
+
+![image]()
+![image]()
+
+### Weighted Airbnb Scores vs. Transportation Convenience
+
+![image]()
 
 
 
