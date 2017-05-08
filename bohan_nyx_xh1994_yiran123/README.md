@@ -62,6 +62,10 @@ Normalization:
 
 finalScore = (reviews + safety + transportation + recreationAndDinning)/4
 
+Here's the weighted score frequency bar graph:
+
+![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/bar.png)
+
 ## Correlation Coefficient
 The defination of correlation coefficient:
 
