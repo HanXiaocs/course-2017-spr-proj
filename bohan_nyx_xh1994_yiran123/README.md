@@ -36,12 +36,17 @@ As one of the most famous online marketplaces and hospitality service websites, 
    http://datamechanics.io/data/wuhaoyu_yiran123/MBTA_Bus_Stops.geojson
 
 ### Data Retrival
+In our project, we mainly use coordinates to locate places and employ geopy/vincenty to calculate the distances between places in different datasets in order to obtain a statistic.
+
 | Transformations | Original Dataset                 | New combination|
 | -------------   |:---------------:                 | --------------:|
-| 1               | Active food establishment licence, Crime Boston |                |
-| 2               |                 |                |
-| 3               |                 |                |
-| 4               |                 |                |
-| 5               |                 |                |
-| 6               |                 |                |
-| 7               |                 |                |
+| 1               | Active food establishment licence, Crime Boston | Crime number around each food establishment(within 1 mile)|
+| 2               | MBTA Bus Stop, Airbnb Rating(Original), Entertainment License|Entertainment & bustop number around each Airbnb|
+| 3               | Active food establishment licence, Food Establishment Inspection |Cleanliness level of food establishments|
+| 4               |Cleanliness level of food establishments, Crime number around each food establishment(within 1 mile),Entertainment & bustop number around each Airbnb|correlation coefficient|
+| 5               |correlation coefficient|food establishment score system|
+| 6               |food establishment score system, Airbnb Rating| Airbnb surrounding food establishment score (Average)|
+| 7               |Airbnb Rating, Crime Boston | Crime number around each Airbnb(within 1 mile)|
+| 8               |Airbnb Rating, Entertainment & bustop number around each Airbnb, Airbnb surrounding food establishment score (Average), Crime number around each Airbnb(within 1 mile)|Airbnb Score System|
+| 9               |Airbnb Score System|Score distribution(for visualization)|
+
