@@ -16,16 +16,22 @@ As one of the most famous online marketplaces and hospitality service websites, 
 
 ### Data Sets
 1. City of Boston crime incident July 2012 - August 2015
+   
    https://data.cityofboston.gov/Public-Safety/Crime-Incident-Reports-July-2012-August-2015-Sourc/7cdf-6fgx
 2. Active Food Establishment Licenses
+   
    https://data.cityofboston.gov/Permitting/Active-Food-Establishment-Licenses/gb6y-34cq
 3. Food Establishment Inspections
+   
    https://data.cityofboston.gov/Health/Food-Establishment-Inspections/qndu-wx8w
 4. Entertainment Licenses
+   
    https://data.cityofboston.gov/Permitting/Entertainment-Licenses/qq8y-k3gp
 5. Airbnb Boston
+   
    http://insideairbnb.com/get-the-data.html
 6. MBTA Bus Sthttp://insideairbnb.com/get-the-data.htmlops
+   
    http://datamechanics.io/data/wuhaoyu_yiran123/MBTA_Bus_Stops.geojson
 
 
