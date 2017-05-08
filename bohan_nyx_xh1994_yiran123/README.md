@@ -80,12 +80,12 @@ Here is the distribution (Our first visualization) as well as the corresponding 
 
 ### Original and Weighted Airbnb Scores(x-axis)  vs  Safety Level (y-axis) 
 
-![image]()
-![image]()
+![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/Screen%20Shot%202017-04-26%20at%204.01.54%20AM.png)
+![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/Screen%20Shot%202017-04-26%20at%203.59.33%20AM.png)
 
 ### Weighted Airbnb Scores vs. Transportation Convenience
 
-![image]()
+![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/transport.png)
 
 
 
