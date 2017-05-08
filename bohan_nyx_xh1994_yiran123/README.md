@@ -30,8 +30,18 @@ As one of the most famous online marketplaces and hospitality service websites, 
 5. Airbnb Boston
    
    http://insideairbnb.com/get-the-data.html
+   
 6. MBTA Bus Sthttp://insideairbnb.com/get-the-data.htmlops
    
    http://datamechanics.io/data/wuhaoyu_yiran123/MBTA_Bus_Stops.geojson
 
-
+### Data Retrival
+| Transformations | Original Dataset                 | New combination|
+| -------------   |:---------------:                 | --------------:|
+| 1               | Active food establishment licence, Crime Boston |                |
+| 2               |                 |                |
+| 3               |                 |                |
+| 4               |                 |                |
+| 5               |                 |                |
+| 6               |                 |                |
+| 7               |                 |                |
