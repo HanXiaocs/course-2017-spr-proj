@@ -35,19 +35,19 @@ As one of the most famous online marketplaces and hospitality service websites, 
    
    http://datamechanics.io/data/wuhaoyu_yiran123/MBTA_Bus_Stops.geojson
 
-### Data Retrival
+### Data Retrieval
 In our project, we mainly use coordinates to locate places and employ geopy/vincenty to calculate the distances between places in different datasets in order to obtain a statistic.
 
 | Transformations | Original Dataset                 | New combination|
 | -------------   |:---------------:                 | --------------:|
-| 1               | Active food establishment licence, Crime Boston | Crime number around each food establishment(within 1 mile)|
-| 2               | MBTA Bus Stop, Airbnb Rating(Original), Entertainment License|Entertainment & bustop number around each Airbnb|
-| 3               | Active food establishment licence, Food Establishment Inspection |Cleanliness level of food establishments(Passrate of inspections)|
+| 1               | Active food establishment license, Crime Boston | Crime number around each food establishment(within 1 mile)|
+| 2               | MBTA Bus Stop, Airbnb Rating(Original), Entertainment License|Entertainment & bus stop number around each Airbnb|
+| 3               | Active food establishment license, Food Establishment Inspection |Cleanliness level of food establishments(Passrate of inspections)|
 | 4               |Cleanliness level of food establishments, Crime number around each food establishment(within 1 mile),Entertainment & bustop number around each Airbnb|Correlation coefficient|
 | 5               |correlation coefficient|Food establishment score system|
 | 6               |Food establishment score system, Airbnb Rating| Airbnb surrounding food establishment score (Average)|
 | 7               |Airbnb Rating, Crime Boston | Crime number around each Airbnb(within 1 mile)|
-| 8               |Airbnb Rating, Entertainment & bustop number around each Airbnb, Airbnb surrounding food establishment score (Average), Crime number around each Airbnb(within 1 mile)|Airbnb Score System|
+| 8               |Airbnb Rating, Entertainment & bus stop number around each Airbnb, Airbnb surrounding food establishment score (Average), Crime number around each Airbnb(within 1 mile)|Airbnb Score System|
 | 9               |Airbnb Score System|Score distribution(for visualization)|
 
 # Algorithm
@@ -67,7 +67,7 @@ Here's the weighted score frequency bar graph:
 ![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/bar.png)
 
 ## Correlation Coefficient
-The defination of correlation coefficient:
+The definition of correlation coefficient:
 
 ![equation](http://latex.codecogs.com/gif.latex?corr%28x%2Cy%29%3D%20%5Cfrac%7Bcov%28x%2Cy%29%7D%7Bstd%28x%29%20%5Ccdot%20std%28y%29%7D)
 
@@ -80,7 +80,7 @@ Here is the distribution (Our first visualization) as well as the corresponding 
 
 Correlation coefficient: 0.66
 
-Overall, The original Airbnb ratings is higher than the Weighted Airbnb scores, but they are strong positive related. The reviews from customers are relatively reliable. Also, for Airbnb housings that haven’t been booked by any customer (dots on x-axis), there are still a few of them worth a try for they have relatively high weighted scores.
+Overall, the original Airbnb ratings is higher than the Weighted Airbnb scores, but they are strong positive related. The reviews from customers are relatively reliable. Also, for Airbnb housings that haven’t been booked by any customer (dots on x-axis), there are still a few of them worth a try for they have relatively high weighted scores.
 
 ### Original and Weighted Airbnb Scores(x-axis)  vs  Safety Level (y-axis) 
 
@@ -89,7 +89,7 @@ Overall, The original Airbnb ratings is higher than the Weighted Airbnb scores, 
 
 Correlation coefficient: 0.01 and -0.61
 
-Above graph No.1 shows the weak positive relationship between original Airbnb scores and number of crimes happened 1km within of each Airbnb. Although the original ratings do not strongly connected to the number of crimes, we can observe that high rating Airbnb housings are mostly located in safe areas. Thus we think it is reasonable to take safety as one factor that may affect the evaluations. 
+Above graph No.1 shows the weak positive relationship between original Airbnb scores and number of crimes happened 1km within of each Airbnb. Although the original ratings do not strongly connect to the number of crimes, we can observe that high rating Airbnb housings are mostly located in safe areas. Thus we think it is reasonable to take safety as one factor that may affect the evaluations. 
 Graph No.2 shows the strong negative relationship between weighted scores and number of crimes. 
 
 ### Weighted Airbnb Scores vs. Transportation Convenience
@@ -118,7 +118,7 @@ Here is a screenshot of the map:
 ![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/map1.png)
 ![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/map2.png)
 
-This is a satellite map of Boston with neighbor names and roads. Each dot on the map represent one Airbnb housing. While a user clicks a dot, a info box will pop out. So far we include the name, weighted score and an Airbnb link to the house. More fields can be added to the box (just need a little change on the source code, the data file we use basically includes all raw scores and calculated scores).
+This is a satellite map of Boston with neighbor names and roads. Each dot on the map represent one Airbnb housing. While a user clicks a dot, an info box will pop out. So far we include the name, weighted score and an Airbnb link to the house. More fields can be added to the box (just need a little change on the source code, the data file we use basically includes all raw scores and calculated scores).
 The map can be zoomed in/out. 
 
 For each plot of houses on the map, overall score > 0.8 is orange, 0.5 < score < 0.8 is blue, and those below 0.5 are set to yellow. 
@@ -127,7 +127,7 @@ For each plot of houses on the map, overall score > 0.8 is orange, 0.5 < score <
 
 This is an open-ended project with no certain conclusion. Our ultimate goal is to write a semi-application that can be extended and adjusted to a real product that can be used to help potential Airbnb customers. The interactive map is a model that cound be used in the future.
 
-Also, the data itself actually reveals a lot of information. Generally, the original score and the weighted score are related, which implies that most customers' reviews are reliable. However, the overall weighted scores are lower than the original scores. This means  the factors that we consider to be important actually drag down the whole scale. Therefore, the houses that have a big gap between the original scores and the weighted scores may not be a good choice to stay. For example, while we calculate the crime number around Airbnb houses, the number is actually greater than what we thought it would be. This could be a effective factor on those low rating houses. Also, many of our favorite restaurants actually failed a lot of inspections. Cooking at home seems to be a necessary skill :)
+Also, the data itself actually reveals a lot of information. Generally, the original score and the weighted score are related, which implies that most customers' reviews are reliable. However, the overall weighted scores are lower than the original scores. This means the factors that we consider to be important actually drag down the whole scale. Therefore, a house that have a big gap between the original scores and the weighted scores may not be a good choice to stay. For example, while we calculate the crime number around Airbnb houses, the number is actually greater than what we thought it would be. This could be an effective factor on those low rating houses. Also, many of our favorite restaurants actually failed a lot of inspections. Cooking at home seems to be a necessary skill :)
 
 # Further Extension and Limitation
 
@@ -135,7 +135,7 @@ Due to the limitation of the datasets we can deploy, we only cover a small part 
 
 In addition, because we define the scoring system and algorithm by our own understandings, the scores may be biased. 
 
-This project still have some space to extend in the future. We also planned a search engine that allows users to directly search their ideal or potential Airbnb housings for their trips. We could also allow searching by filters to satisfy various needs (ex. Highest rating, neighbors with most entertainments, safest neighbor).  In fact, if we have enough information, we may be able to write a application that can be used in reality. 
+This project still has some space to extend in the future. We also planned a search engine that allows users to directly search their ideal or potential Airbnb housings for their trips. We could also allow searching by filters to satisfy various needs (ex. Highest rating, neighbors with most entertainments, safest neighbor).  In fact, if we have enough information, we may be able to write an application that can be used in reality. 
 
 
 # Reference 
