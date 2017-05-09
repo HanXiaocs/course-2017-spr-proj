@@ -94,7 +94,7 @@ Graph No.2 shows the strong negative relationship between weighted scores and nu
 
 ### Original Airbnb Scores vs. Transportation Convenience
 
-![image]()
+![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/Screen%20Shot%202017-05-08%20at%209.28.55%20PM.png)
 
 Correlation coefficient: -0.01
 
