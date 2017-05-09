@@ -106,7 +106,7 @@ Files can be found in the folder Visualization.
 
 ## First Visualization: Plotting 
 
-The above graphs of the correlation coefficients are the first visualization. We edit a plotting template which we found on d3.js to adjust to our need and show the distributions of various scores. The script reads data from tsv file and plot on a html page. Users can click each dot on the graph to see the exact value of the dot.(i.e different scores)
+The above graphs of the correlation coefficients are the first visualization. Our code is based on a plotting template we found on d3js.org. The script reads data from tsv file and plot on a html page. Users can click each dot on the graph to see the exact value of the dot.(i.e different scores)
 
 About the data: The original template required tsv file as input. Since we're using mongodb, the data file must be exported as json or csv first then use convertor to create a tsv file.
 
