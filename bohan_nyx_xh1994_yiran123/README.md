@@ -14,7 +14,7 @@ As one of the most famous online marketplaces and hospitality service websites, 
 3. D3.js
 4. Leaflet js
 
-### Data Sets
+### Datasets
 1. City of Boston crime incident July 2012 - August 2015
    
    https://data.cityofboston.gov/Public-Safety/Crime-Incident-Reports-July-2012-August-2015-Sourc/7cdf-6fgx
@@ -106,7 +106,9 @@ Files can be found in the folder Visualization.
 
 ## First Visualization: Plotting 
 
-The above graphs of the correlation coefficients are the first visualization. We use plotting template which we found on d3.js to show the distributions of various scores. The script reads data from tsv file and plot on a html page. Users can click each dot on the graph to see the exact value of the dot.(i.e different scores)
+The above graphs of the correlation coefficients are the first visualization. We edit a plotting template which we found on d3.js to adjust to our need and show the distributions of various scores. The script reads data from tsv file and plot on a html page. Users can click each dot on the graph to see the exact value of the dot.(i.e different scores)
+
+About the data: The original template required tsv file as input. Since we're using mongodb, the data file must be exported as json or csv first then use convertor to create a tsv file.
 
 ## Second Visualization: An interactive map
 
@@ -121,7 +123,11 @@ The map can be zoomed in/out.
 
 For each plot of houses on the map, overall score > 0.8 is orange, 0.5 < score < 0.8 is blue, and those below 0.5 are set to yellow. 
 
+# Conclusion
 
+This is an open-ended project with no certain conclusion. Our ultimate goal is to write a semi-application that can be extended and adjusted to a real product that can be used to help potential Airbnb customers. The interactive map is a model that cound be used in the future.
+
+Also, the data itself actually reveals a lot of information. While we calculate the crime number around Airbnb houses, the number is actually greater than what we thought it would be. Also, many of our favorite restaurants actually failed a lot of inspections. Cooking at home seems to be a necessary skill :)
 
 # Reference 
 1. https://bl.ocks.org/mbostock/3887118
