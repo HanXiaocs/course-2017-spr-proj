@@ -78,18 +78,49 @@ Here is the distribution (Our first visualization) as well as the corresponding 
 
 ![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/oldnew.png)
 
+Correlation coefficient: 0.66
+Overall, The original Airbnb ratings is higher than the Weighted Airbnb scores, but they are strong positive related. The reviews from customers are relatively reliable. Also, for Airbnb housings that haven’t been booked by any customer (dots on x-axis), there are still a few of them worth a try for they have relatively high weighted scores.
+
 ### Original and Weighted Airbnb Scores(x-axis)  vs  Safety Level (y-axis) 
 
 ![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/Screen%20Shot%202017-04-26%20at%204.01.54%20AM.png)
 ![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/Screen%20Shot%202017-04-26%20at%203.59.33%20AM.png)
 
+Correlation coefficient: 0.01 and -0.61
+Above graph No.1 shows the weak positive relationship between original Airbnb scores and number of crimes happened 1km within of each Airbnb. Although the original ratings do not strongly connected to the number of crimes, we can observe that high rating Airbnb housings are mostly located in safe areas. Thus we think it is reasonable to take safety as one factor that may affect the evaluations. 
+Graph No.2 shows the strong negative relationship between weighted scores and number of crimes. 
+
 ### Weighted Airbnb Scores vs. Transportation Convenience
 
 ![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/transport.png)
 
+Correlation coefficient: 0.08
+The relationship between weighted Airbnb scores and transportation convenience is weak positive related. We cannot summarize that Airbnb housings in which neighbors tend to be more convenient in respect to transportation. Therefore, it is important to add this factor to the total rating, because each Airbnb is unique.
+
+# Visualizations
+
+Files can be found in the folder Visualization.
+
+## First Visualization: Plotting 
+
+The above graphs of the correlation coefficients are the first visualization. We use plotting template which we found on d3.js to show the distributions of various scores. The script reads data from tsv file and plot on a html page. Users can click each dot on the graph to see the exact value of the dot.(i.e different scores)
+
+## Second Visualization: An interactive map
+
+We employ another js map library called leaflet and create an interactive map to help Airbnb customers to choose their ideal Airbnb.
+
+Here is a screenshot of the map:
+![image]()
+![image]()
+
+This is a satellite map of Boston with neighbor names and roads. Each dot on the map represent one Airbnb housing. While a user clicks a dot, a info box will pop out. So far we include the name, weighted score and an Airbnb link to the house. More fields can be added to the box (just need a little change on the source code, the data file we use basically includes all raw scores and calculated scores)
 
 
 
+
+# Reference 
+1. https://bl.ocks.org/mbostock/3887118
+2. http://leafletjs.com/
 
 
 
