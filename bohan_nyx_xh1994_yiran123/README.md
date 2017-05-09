@@ -129,6 +129,15 @@ This is an open-ended project with no certain conclusion. Our ultimate goal is t
 
 Also, the data itself actually reveals a lot of information. Generally, the original score and the weighted score are related, which implies that most customers' reviews are reliable. However, the overall weighted scores are lower than the original scores. This means  the factors that we consider to be important actually drag down the whole scale. Therefore, the houses that have a big gap between the original scores and the weighted scores may not be a good choice to stay. For example, while we calculate the crime number around Airbnb houses, the number is actually greater than what we thought it would be. This could be a effective factor on those low rating houses. Also, many of our favorite restaurants actually failed a lot of inspections. Cooking at home seems to be a necessary skill :)
 
+# Further Extension and Limitation
+
+Due to the limitation of the datasets we can deploy, we only cover a small part of factors that may affect Airbnb ratings. Prices and evaluation of hosts should also be considered. Some of the data we use is rather old. Also, the Airbnb dataset is not the live data of the website. Some information may be changed. While we test the maps, we found some URLs were already expired.
+
+In addition, because we define the scoring system and algorithm by our own understandings, the scores may be biased. 
+
+This project still have some space to extend in the future. We also planned a search engine that allows users to directly search their ideal or potential Airbnb housings for their trips. We could also allow searching by filters to satisfy various needs (ex. Highest rating, neighbors with most entertainments, safest neighbor).  In fact, if we have enough information, we may be able to write a application that can be used in reality. 
+
+
 # Reference 
 1. https://bl.ocks.org/mbostock/3887118
 2. http://leafletjs.com/
