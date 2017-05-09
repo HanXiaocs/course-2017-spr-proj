@@ -104,7 +104,7 @@ The relationship between weighted Airbnb scores and transportation convenience i
 
 Files can be found in the folder Visualization.
 
-## First Visualization: Plotting 
+## First Visualization: Plotting (Must open in Firefox)
 
 The above graphs of the correlation coefficients are the first visualization. Our code is based on a plotting template we found on d3js.org. The script reads data from tsv file and plot on a html page. Users can click each dot on the graph to see the exact value of the dot.(i.e different scores)
 
