@@ -115,8 +115,8 @@ About the data: The original template required tsv file as input. Since we're us
 We employ another js map library called leaflet and create an interactive map to help Airbnb customers to choose their ideal Airbnb.
 
 Here is a screenshot of the map:
-![image]()
-![image]()
+![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/map1.png)
+![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/map2.png)
 
 This is a satellite map of Boston with neighbor names and roads. Each dot on the map represent one Airbnb housing. While a user clicks a dot, a info box will pop out. So far we include the name, weighted score and an Airbnb link to the house. More fields can be added to the box (just need a little change on the source code, the data file we use basically includes all raw scores and calculated scores).
 The map can be zoomed in/out. 
@@ -127,7 +127,7 @@ For each plot of houses on the map, overall score > 0.8 is orange, 0.5 < score <
 
 This is an open-ended project with no certain conclusion. Our ultimate goal is to write a semi-application that can be extended and adjusted to a real product that can be used to help potential Airbnb customers. The interactive map is a model that cound be used in the future.
 
-Also, the data itself actually reveals a lot of information. While we calculate the crime number around Airbnb houses, the number is actually greater than what we thought it would be. Also, many of our favorite restaurants actually failed a lot of inspections. Cooking at home seems to be a necessary skill :)
+Also, the data itself actually reveals a lot of information. Generally, the original score and the weighted score are related, which implies that most customers' reviews are reliable. However, the overall weighted scores are lower than the original scores. This means  the factors that we consider to be important actually drag down the whole scale. Therefore, the houses that have a big gap between the original scores and the weighted scores may not be a good choice to stay. For example, while we calculate the crime number around Airbnb houses, the number is actually greater than what we thought it would be. This could be a effective factor on those low rating houses. Also, many of our favorite restaurants actually failed a lot of inspections. Cooking at home seems to be a necessary skill :)
 
 # Reference 
 1. https://bl.ocks.org/mbostock/3887118
