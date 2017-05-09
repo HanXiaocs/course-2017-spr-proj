@@ -92,13 +92,13 @@ Correlation coefficient: 0.01 and -0.61
 Above graph No.1 shows the weak positive relationship between original Airbnb scores and number of crimes happened 1km within of each Airbnb. Although the original ratings do not strongly connect to the number of crimes, we can observe that high rating Airbnb housings are mostly located in safe areas. Thus we think it is reasonable to take safety as one factor that may affect the evaluations. 
 Graph No.2 shows the strong negative relationship between weighted scores and number of crimes. 
 
-### Weighted Airbnb Scores vs. Transportation Convenience
+### Original Airbnb Scores vs. Transportation Convenience
 
-![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/transport.png)
+![image]()
 
-Correlation coefficient: 0.08
+Correlation coefficient: -0.01
 
-The relationship between weighted Airbnb scores and transportation convenience is weak positive related. We cannot summarize that Airbnb housings in which neighbors tend to be more convenient in respect to transportation. Therefore, it is important to add this factor to the total rating, because each Airbnb is unique.
+The relationship between Original Airbnb scores and transportation convenience is almost not related. We cannot summarize that Airbnb housings in which neighbors tend to be more convenient in respect to transportation. Therefore, it is important to add this factor to the total rating, because each Airbnb is unique.
 
 # Visualizations
 
