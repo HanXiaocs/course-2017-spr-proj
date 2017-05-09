@@ -79,6 +79,7 @@ Here is the distribution (Our first visualization) as well as the corresponding 
 ![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/oldnew.png)
 
 Correlation coefficient: 0.66
+
 Overall, The original Airbnb ratings is higher than the Weighted Airbnb scores, but they are strong positive related. The reviews from customers are relatively reliable. Also, for Airbnb housings that haven’t been booked by any customer (dots on x-axis), there are still a few of them worth a try for they have relatively high weighted scores.
 
 ### Original and Weighted Airbnb Scores(x-axis)  vs  Safety Level (y-axis) 
@@ -87,6 +88,7 @@ Overall, The original Airbnb ratings is higher than the Weighted Airbnb scores, 
 ![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/Screen%20Shot%202017-04-26%20at%203.59.33%20AM.png)
 
 Correlation coefficient: 0.01 and -0.61
+
 Above graph No.1 shows the weak positive relationship between original Airbnb scores and number of crimes happened 1km within of each Airbnb. Although the original ratings do not strongly connected to the number of crimes, we can observe that high rating Airbnb housings are mostly located in safe areas. Thus we think it is reasonable to take safety as one factor that may affect the evaluations. 
 Graph No.2 shows the strong negative relationship between weighted scores and number of crimes. 
 
@@ -95,6 +97,7 @@ Graph No.2 shows the strong negative relationship between weighted scores and nu
 ![image](https://github.com/bohanli0403/course-2017-spr-proj/blob/master/bohan_nyx_xh1994_yiran123/img/transport.png)
 
 Correlation coefficient: 0.08
+
 The relationship between weighted Airbnb scores and transportation convenience is weak positive related. We cannot summarize that Airbnb housings in which neighbors tend to be more convenient in respect to transportation. Therefore, it is important to add this factor to the total rating, because each Airbnb is unique.
 
 # Visualizations
@@ -113,8 +116,10 @@ Here is a screenshot of the map:
 ![image]()
 ![image]()
 
-This is a satellite map of Boston with neighbor names and roads. Each dot on the map represent one Airbnb housing. While a user clicks a dot, a info box will pop out. So far we include the name, weighted score and an Airbnb link to the house. More fields can be added to the box (just need a little change on the source code, the data file we use basically includes all raw scores and calculated scores)
+This is a satellite map of Boston with neighbor names and roads. Each dot on the map represent one Airbnb housing. While a user clicks a dot, a info box will pop out. So far we include the name, weighted score and an Airbnb link to the house. More fields can be added to the box (just need a little change on the source code, the data file we use basically includes all raw scores and calculated scores).
+The map can be zoomed in/out. 
 
+For each plot of houses on the map, overall score > 0.8 is orange, 0.5 < score < 0.8 is blue, and those below 0.5 are set to yellow. 
 
 
 
