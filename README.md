@@ -1,3 +1,37 @@
+# Github review for CompanyWide:
+
+The project to be reviewed is in bohan_nyx_xh1994_yiran123. There is a very detailed readme that introduce every aspect of our project. For a better visualized version, please check 591 poster.pdf which we used in our presentation session. For this project, i chose Airbnb as the topic for our team after a week of research. My teammate Han and i collaborated on the first stage (retrievedatasets.py, transformation1-3), which allowed us to retrieve and process data through APIs provided by City of Boston data portal. I'm responsible for finding useful datasets and transformation3. Later we had two more teammates joined us. I wrote transformation 5 and 6 pseudocode for transformation 8. At the end of the semester, i designed the poster with one teammate and wrote the final wrap-up(readme) by myself. 
+
+The first difficult part for this project was how to find a practical and meaningful topic given limited data and resources. It took me quite a lot of time on research and to settle on something different than monotonous analysis of the city.
+The second challenge would be how to retrieve useful data from so many datasets. Our largest datasets contains more than 300K rows. So we decided to divide our objective into small tasks and let each transformations deal with one factor using the results obtained from past transformations. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # course-2017-spr-proj
 Project repository for the course project in the Spring 2017 iteration of the Data Mechanics course at Boston University.
 
